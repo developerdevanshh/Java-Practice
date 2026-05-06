@@ -112,5 +112,26 @@ public class DayTwo{
         // }else{
         //     System.out.println("No, it is not Palindrome.");
         // }
+
+        // Arm strong number 
+        int sum = 0;
+        int n, num, rem;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        n = sc.nextInt();
+        num = n;
+        int digits = String.valueOf(n).length();
+        while(n != 0){
+            rem = n % 10;
+            sum = sum + Math.pow(rem,digits);
+            sum += Math.pow(rem, digits);
+            n = n / 10;
+        }
+
+        if(sum == num){
+            System.out.println("This is a Armstrong number.");
+        }else{
+            System.out.println("This is not a Armstrong number.");
+        }
     }
 }
