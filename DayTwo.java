@@ -67,6 +67,50 @@ public class DayTwo{
         // }
         // System.out.println("Factorial of: " + num + " is " + fac);
 
-        
+        // // Fibonacci sequence generator
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the number of terms: ");
+        // int terms = sc.nextInt();
+        // int i = 0,a = 0,b = 1, next;
+        // while(i< terms){
+        //     if(i<=1){
+        //         next = i;
+        //     } else {
+        //         next = a + b;
+        //         a = b;
+        //         b = next;
+        //     }
+        //     System.out.print(next + " ");
+        //     i++;
+        // }
+
+        // // Reverse a number
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number: ");
+        // int num = sc.nextInt();
+        // int rev = 0;
+        // while(num != 0){
+        //     int digit = num % 10;
+        //     rev = rev * 10 + digit;
+        //     num = num /10;
+        // }        
+        // System.out.println(rev);
+
+        // // Palindrome Number checker
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number: ");
+        // int num = sc.nextInt();
+        // int mainNum = num;
+        // int rev = 0;
+        // while(num!=0){
+        //     int digit = num % 10;
+        //     rev = rev * 10 + digit;
+        //     num = num / 10;
+        // }
+        // if(mainNum == rev){
+        //     System.out.println("Yes, it is Palindrome.");
+        // }else{
+        //     System.out.println("No, it is not Palindrome.");
+        // }
     }
 }
