@@ -113,25 +113,112 @@ public class DayTwo{
         //     System.out.println("No, it is not Palindrome.");
         // }
 
-        // Arm strong number 
-        int sum = 0;
-        int n, num, rem;
+        // // Arm strong number 
+        // int sum = 0;
+        // int n, num, rem;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number: ");
+        // n = sc.nextInt();
+        // num = n;
+        // int digits = String.valueOf(n).length();
+        // while(n != 0){
+        //     rem = n % 10;
+        //     sum = sum + Math.pow(rem,digits);
+        //     sum += Math.pow(rem, digits);
+        //     n = n / 10;
+        // }
+
+        // if(sum == num){
+        //     System.out.println("This is a Armstrong number.");
+        // }else{
+        //     System.out.println("This is not a Armstrong number.");
+        // }
+
+        // Inverted Triangle
+        // int n;
+        // Scanner sc = new Scanner(System.in);
+        // n = sc.nextInt();
+        // for(int i = n ; i >= 1 ; i--){
+        //     for(int j = i ; j >= 1 ; j--){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println(" ");
+        // }
+
+        int n;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.println("Enter a positive integar: ");
         n = sc.nextInt();
-        num = n;
-        int digits = String.valueOf(n).length();
-        while(n != 0){
-            rem = n % 10;
-            sum = sum + Math.pow(rem,digits);
-            sum += Math.pow(rem, digits);
-            n = n / 10;
+        // // Pyramid Pattern
+        // for(int i = 1 ; i <= n ; i++){
+        //     System.out.println();
+        //     // System.out.print(" ");
+        //     for(int j = n-1 ; j >= i ; j--){
+        //         System.out.print("   ");
+        //     }
+        //     for(int j = 1 ; j <= i ; j++){
+        //         System.out.print(" * ");
+        //     }
+        //     for(int j = 2 ; j <= i ; j++){
+        //         System.out.print(" * ");
+        //     }
+        // }
+
+        // Square
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Hollow Square
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i == 1||i == n||j==1||j==n){
+        //             System.out.print("*");
+        //         }
+        //         if(i != 1 && i != n && j != 1 && j != n){
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        // Inverted Pyramid
+        // for(int i = n; i>=1;i--){
+        //     for(int j = n;j>=i;j--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     for(int j = 2;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Hollow Pyramid Pattern
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            if(i == 1 || i == n){
+                for(int k = 1;k <=(i*2)-1;k++){
+                    System.out.print("*");
+                }
+            }else{
+                for(int k = 1;k <=(i*2)-1;k++){
+                    if(k==1||k == i*2-1){
+                        System.out.print("*");
+                    }else{
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
         }
 
-        if(sum == num){
-            System.out.println("This is a Armstrong number.");
-        }else{
-            System.out.println("This is not a Armstrong number.");
-        }
     }
 }
