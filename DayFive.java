@@ -2,7 +2,8 @@ public class DayFive{
     public static void main(String[] args){
         int[] arr = {20,2,55,55,656,51};
         System.out.println(sumOfArray(arr));
-        System.out.println(sum(2,3,4, 0));
+        System.out.println(sum(2,3,4));
+        System.out.println(sum(2,34));
         System.out.println(upperFun(" asdfa dev  sfaf         "));
         System.out.println(sum(3.3,432.3, 2.2,2.20));
 
