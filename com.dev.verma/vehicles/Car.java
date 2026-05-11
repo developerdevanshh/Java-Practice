@@ -1,4 +1,4 @@
-package com.dev.verma.Vehicles;
+package com.dev.verma.vehicles;
 
 public class Car {
     
