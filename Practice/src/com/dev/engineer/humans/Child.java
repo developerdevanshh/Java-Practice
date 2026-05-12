@@ -1,4 +1,4 @@
 package com.dev.engineer.humans;
 
-public class Child {
+public class Child extends Parents{
 }
