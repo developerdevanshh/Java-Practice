@@ -26,17 +26,20 @@ public class Test {
 //        dog.eat();
 //        dog.sayHello(); // overrides the method
 
-        Child child = new Child();
-        child.setAge(23);
-        child.setName("Devansh");
+        Child child = new Child(12, "Nikk");
         System.out.println(child.getAge());
         System.out.println(child.getName());
-
-        Parents parents = new Parents();
-        parents.setAge(45);
-        parents.setName("KB");
-        System.out.println(parents.getAge());
-        System.out.println(parents.getName());
+        child.ChildMethod();
+//        child.setAge(23);
+//        child.setName("Devansh");
+//        System.out.println(child.getAge());
+//        System.out.println(child.getName());
+//
+//        Parents parents = new Parents();
+//        parents.setAge(45);
+//        parents.setName("KB");
+//        System.out.println(parents.getAge());
+//        System.out.println(parents.getName());
 
     }
 }
