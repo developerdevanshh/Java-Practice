@@ -24,7 +24,7 @@ public class Animal {
     }
 
     public void sayHello(){
-        System.out.println("");
+        System.out.println("ANIMAL");
     }
 
 }

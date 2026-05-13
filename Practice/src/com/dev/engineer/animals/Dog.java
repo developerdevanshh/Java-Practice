@@ -6,4 +6,9 @@ public class Dog extends Animal{
         System.out.println("Woof");
     }
     // Method Overriding
+
+
+    public void SayBye() {
+        System.out.println("Woof woof");
+    }
 }

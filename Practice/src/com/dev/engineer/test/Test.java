@@ -1,6 +1,8 @@
 package com.dev.engineer.test;
 
+import com.dev.engineer.animals.Cat;
 import com.dev.engineer.animals.Dog;
+import com.dev.engineer.animals.Animal;
 import com.dev.engineer.humans.Child;
 import com.dev.engineer.humans.Parents;
 import com.dev.engineer.multipleInheritance.Smartphone;
@@ -42,8 +44,18 @@ public class Test {
 //        System.out.println(parents.getAge());
 //        System.out.println(parents.getName());
 
-        Smartphone smartphone = new Smartphone();
-        smartphone.ClickPhoto();
+//        Smartphone smartphone = new Smartphone();
+//        smartphone.ClickPhoto();
+
+        Animal animal = new Animal();
+        animal.sayHello();
+
+        Animal bob = new Dog();
+        bob.sayHello();
+//        bob.SayBye(); // Say bye does not work because animal class does not have the saybye method.
+
+        Animal kitty = new Cat();
+        kitty.sayHello();
 
     }
 }
