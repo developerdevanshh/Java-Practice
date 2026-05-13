@@ -3,6 +3,7 @@ package com.dev.engineer.test;
 import com.dev.engineer.animals.Dog;
 import com.dev.engineer.humans.Child;
 import com.dev.engineer.humans.Parents;
+import com.dev.engineer.multipleInheritance.Smartphone;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,11 +26,11 @@ public class Test {
 //        System.out.println(dog.getName());
 //        dog.eat();
 //        dog.sayHello(); // overrides the method
-
-        Child child = new Child(12, "Nikk");
-        System.out.println(child.getAge());
-        System.out.println(child.getName());
-        child.ChildMethod();
+//
+//        Child child = new Child(12, "Nikk");
+//        System.out.println(child.getAge());
+//        System.out.println(child.getName());
+//        child.ChildMethod();
 //        child.setAge(23);
 //        child.setName("Devansh");
 //        System.out.println(child.getAge());
@@ -40,6 +41,9 @@ public class Test {
 //        parents.setName("KB");
 //        System.out.println(parents.getAge());
 //        System.out.println(parents.getName());
+
+        Smartphone smartphone = new Smartphone();
+        smartphone.ClickPhoto();
 
     }
 }
