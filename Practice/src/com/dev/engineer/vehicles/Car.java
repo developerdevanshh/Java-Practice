@@ -4,7 +4,7 @@ public class Car extends Vehicle{
 
     @Override
     public void accerlerate() {
-        
+
     }
 
     @Override

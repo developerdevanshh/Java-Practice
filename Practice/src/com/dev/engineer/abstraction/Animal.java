@@ -3,6 +3,12 @@ package com.dev.engineer.abstraction;
 public abstract class Animal {
     private int age;
     private int name;
+
+    private boolean hasSuperPowers;
+
+    protected Animal(){
+        this.hasSuperPowers = false;
+    }
     public int getName() {
         return name;
     }
@@ -19,7 +25,7 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public abstract void SayHello(); // Abstract method
+    protected abstract void SayHello(); // Abstract method
 
     public void Sleep(){ //Concrete Method
         System.out.println("zzz.....");
