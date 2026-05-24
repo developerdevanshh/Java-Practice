@@ -62,7 +62,7 @@ public class Test {
         Student student3 = new Student();
         Student student4 = new Student();
         Student student5 = new Student();
-        System.out.println(Student.count);
+        Student.getCount();
         Test test = new Test();
         int a = test.sum(2,4);
         System.out.println(a);

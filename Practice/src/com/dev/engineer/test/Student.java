@@ -7,7 +7,9 @@ public class Student {
         count++;
     }
 
-
+    static {
+        System.out.println("Devansh.............");
+    }
     private int id;
     private String name;
     private int age;
@@ -34,5 +36,9 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public static void getCount(){
+        System.out.println("Total count is: "+ count);
     }
 }
