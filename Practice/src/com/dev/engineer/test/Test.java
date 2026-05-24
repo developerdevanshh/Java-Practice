@@ -63,6 +63,13 @@ public class Test {
         Student student4 = new Student();
         Student student5 = new Student();
         System.out.println(Student.count);
+        Test test = new Test();
+        int a = test.sum(2,4);
+        System.out.println(a);
 
+    }
+
+    public int sum(int a,int b){
+        return a+b;
     }
 }
