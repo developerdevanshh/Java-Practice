@@ -1,22 +1,23 @@
 package com.dev.engineer.test;
 
 public class Student {
-    private String name;
+    public static int count = 0;
 
-    private int rollNumber;
-
-    private int age;
-
-    public int getAge() {
-        return age;
+    public Student(){
+        count++;
     }
 
-    public void setAge(int age) {
-        if(age < 0){
-            System.out.println("Invalid age.");
-        }else{
-            this.age = age;
-        }
+
+    private int id;
+    private String name;
+    private int age;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -27,12 +28,11 @@ public class Student {
         this.name = name;
     }
 
-    public int getRollNumber() {
-        return rollNumber;
+    public int getAge() {
+        return age;
     }
 
-    public void setRollNumber(int rollNumber) {
-        this.rollNumber = rollNumber;
+    public void setAge(int age) {
+        this.age = age;
     }
-
 }

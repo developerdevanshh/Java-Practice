@@ -8,7 +8,9 @@ import java.util.Scanner;
 public class Test  {
     public static void main(String[] args) {
         Dog dog = new Dog("Leo");
+        dog.setDogSound("Woof");
         dog.makeSound();
+        dog.wagTail();
 
 
     }

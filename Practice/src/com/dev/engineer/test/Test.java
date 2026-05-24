@@ -47,15 +47,22 @@ public class Test {
 //        Smartphone smartphone = new Smartphone();
 //        smartphone.ClickPhoto();
 
-        Animal animal = new Animal();
-        animal.sayHello();
+//        Animal animal = new Animal();
+//        animal.sayHello();
+//
+//        Animal bob = new Dog();
+//        bob.sayHello();
+////        bob.SayBye(); // Say bye does not work because animal class does not have the saybye method.
+//
+//        Animal kitty = new Cat();
+//        kitty.sayHello();
 
-        Animal bob = new Dog();
-        bob.sayHello();
-//        bob.SayBye(); // Say bye does not work because animal class does not have the saybye method.
-
-        Animal kitty = new Cat();
-        kitty.sayHello();
+        Student student1 = new Student();
+        Student student2 = new Student();
+        Student student3 = new Student();
+        Student student4 = new Student();
+        Student student5 = new Student();
+        System.out.println(Student.count);
 
     }
 }
