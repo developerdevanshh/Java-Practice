@@ -1,7 +1,7 @@
 package com.dev.engineer.multipleInheritance;
 
-public class MusicPlayer {
-    public void PlayMusic(){
+public interface MusicPlayer {
+    public static void PlayMusic(){
         System.out.println("PlayMusic...");
     }
 }

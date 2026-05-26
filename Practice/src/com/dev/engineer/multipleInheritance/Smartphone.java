@@ -1,4 +1,4 @@
 package com.dev.engineer.multipleInheritance;
 
-public class Smartphone extends Camera {
+public class Smartphone implements Camera {
 }

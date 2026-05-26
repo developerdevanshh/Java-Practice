@@ -1,7 +1,7 @@
 package com.dev.engineer.multipleInheritance;
 
-public class Phone {
-    public void Call(){
+public interface Phone {
+    public static void Call(){
         System.out.println("Calling...");
     }
 }

@@ -1,6 +1,6 @@
 package com.dev.engineer.multipleInheritance;
 
-public class Camera {
+public abstract class Camera {
     public void ClickPhoto(){
         System.out.println("Clicking Photos....");
     }
