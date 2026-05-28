@@ -42,7 +42,7 @@ class StudentRepository{
 public class S_ReportCard {
     public static void main(String[] args) {
         Student s = new Student("Devansh", 74);
-
+        
         GradeCalculator gc = new GradeCalculator();
         String g = gc.calculateGrade(s);
 
