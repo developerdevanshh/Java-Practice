@@ -13,6 +13,6 @@ public class Static_InnerClass {
     public static void main(String[] args) {
         Outer.Inner obj = new Outer.Inner();
 
-        obj.display();
+        obj.display(); 
     }
 }
