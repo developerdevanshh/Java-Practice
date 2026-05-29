@@ -1,3 +1,10 @@
+// Non-static class directly inside outer class.
+
+// Key Points
+// can access ALL members of outer class
+// requires outer class object
+// tightly connected to outer object
+
 package com.dev.engineer.innerclasses;
 class Outer1 {
     int x = 100;
