@@ -33,7 +33,7 @@ class Robot implements Workable {
 }
 public class I_Interface_Segagration {
     public static void main(String[] args) {
-        
+
         Human h = new Human();
         h.eat();
         h.work();
