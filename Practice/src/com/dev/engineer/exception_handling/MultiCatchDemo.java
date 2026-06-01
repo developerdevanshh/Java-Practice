@@ -1,5 +1,4 @@
 package com.dev.engineer.exception_handling;
-
 public class MultiCatchDemo {
     public static void main(String[] args) {
         try {
