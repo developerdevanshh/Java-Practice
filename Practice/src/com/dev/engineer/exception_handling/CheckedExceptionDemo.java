@@ -1,5 +1,4 @@
 package com.dev.engineer.exception_handling;
-
 import java.io.FileReader;
 
 public class CheckedExceptionDemo {
