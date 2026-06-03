@@ -19,6 +19,6 @@ public class FrequencyCheck {
         // Read the integer K
         int k = sc.nextInt();
 
-        //  
+        //
     }
 }
