@@ -81,7 +81,7 @@ public class FrequencyCheck {
         uniqueScores.sort((a, b) -> {
             int freqA = frequencyMap.get(a);
             int freqB = frequencyMap.get(b);
-
+    
             if (freqB != freqA) {
                 return Integer.compare(freqB, freqA); // Higher frequency comes first
             }
