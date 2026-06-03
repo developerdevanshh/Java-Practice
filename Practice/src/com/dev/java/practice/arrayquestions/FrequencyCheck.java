@@ -52,7 +52,7 @@ public class FrequencyCheck {
         }
 
         // Step 4: Move the unique scores into a list to sort them
-//        List<Integer> uniqueScores = new ArrayList<>(frequencyMap.keySet());
+        List<Integer> uniqueScores = new ArrayList<>(frequencyMap.keySet());
 
         // Step 5: Sort based on frequency (descending)
         // Since LinkedHashMap preserved original order, a tie here keeps the original order.
