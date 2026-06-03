@@ -73,7 +73,7 @@ public class FrequencyCheck {
 //            }
 //        });
         // 1. Uses the diamond operator `<>`
-        List<Integer> uniqueScores = new ArrayList<>(frequencyMap.keySet());
+//        List<Integer> uniqueScores = new ArrayList<>(frequencyMap.keySet());
 
 // 2. Uses List.sort() instead of Collections.sort()
 // 3. Uses a clean Lambda (a, b) -> ... instead of an anonymous class
