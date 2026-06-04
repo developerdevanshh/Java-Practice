@@ -23,4 +23,4 @@ public class FrequencyCheck {
     }
 }
 
-git config --global user.email "your_github_email@example.com"
+
