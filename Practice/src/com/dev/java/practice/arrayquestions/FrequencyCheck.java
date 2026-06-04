@@ -20,5 +20,13 @@ public class FrequencyCheck {
         int k = sc.nextInt();
 
         // Count frequencies using LinkedHashMap to preserve first-appearance order
+        Map<Integer,Integer> frequencyMap = new LinkedHashMap<>();
+        for(int score : arr){
+            frequencyMap.put(score,frequencyMap.getOrDefault(score,0) + 1);
+        }
+
+        // Move the unique scores into a list to sort them
+
+        
     }
 }
