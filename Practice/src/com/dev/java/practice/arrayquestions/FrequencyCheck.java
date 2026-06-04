@@ -6,7 +6,7 @@ public class FrequencyCheck {
         Scanner sc = new Scanner(System.in);
 
         // Step 1: Read the Comma-separated line of numbers
-//        if (!sc.hasNextLine()) returns;
+        if (!sc.hasNextLine()) returns;
         String firstLine = sc.nextLine().trim();
 
         // Split the string by commas and covert to an integer array
