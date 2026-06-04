@@ -26,7 +26,38 @@ public class FrequencyCheck {
         }
 
         // Move the unique scores into a list to sort them
+        List<Integer> uniqueScores = new ArrayList<>(frequencyMap.keySet());
 
-        
+        // Sort Based on frequency (Descending)
+        // Since LinkedHashMap preserved original order, a tie here keeps the origin order.
+        Collections.sort(uniqueScores, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer a, Integer b) {
+                int freqA = frequencyMap.get(a);
+                int freqB = frequencyMap.get(b);
+
+                // Sort by frequency in Descending Order
+                if(freqA != freqB){
+                    return Integer.compare(freqA,freqB);
+                }
+
+                // if frequencies match, keep original order.
+                // In Java's Collection.sort (TimSort), returning 0 preserves stable order.
+                return 0;
+            }
+        });
+
+        // Print the top K scores
+        // Ensure we don't go out of bounds if K is larger than unique items
+        int limit = Math.min(k,uniqueScores.size());
+        for(int i = 0;i < limit ;i++){
+            System.out.println(uniqueScores.get(i));
+            if(i < limit - 1){
+                System.out.println(" ");
+            }
+        }
+        System.out.println();
+
+        sc.close();
     }
 }
