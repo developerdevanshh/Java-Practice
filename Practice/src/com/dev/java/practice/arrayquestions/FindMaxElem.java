@@ -1,7 +1,6 @@
 package com.dev.java.practice.arrayquestions;
 
-import java.util.*;
-import java.io.*;
+import java.util.Arrays;
 
 public class FindMaxElem {
 //    //Iterative Approach - O(n) Time and O(1) Space
@@ -51,9 +50,15 @@ public class FindMaxElem {
 //        System.out.println(largest(arr));
 //    }
 
-    // Using Library Methods - O(n) Time and O(1) Space
-    public static void main(String[] args) {
 
+    // Using Library Methods - O(n) Time and O(1) Space
+static int largest(int[] arr) {
+    Arrays.sort(arr);
+    return arr[arr.length - 1];
+}
+    public static void main(String[] args) {
+        int[] arr = {10, 23, 20, 15, 22, 50, 85, 10, 2, 22, 5};
+        System.out.println(largest(arr));
     }
 
 }
