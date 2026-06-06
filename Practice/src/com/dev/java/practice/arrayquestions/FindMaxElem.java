@@ -52,5 +52,8 @@ public class FindMaxElem {
 //    }
 
     // Using Library Methods - O(n) Time and O(1) Space
+    public static void main(String[] args) {
+
+    }
 
 }
