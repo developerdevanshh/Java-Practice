@@ -27,7 +27,15 @@ public class FindMaxElem {
     //Recursive Approach - O(n) Time and O(n) Space
     static int findMax(int[] arr, int i){
 
-        return 0;
+        // Last index returns the element
+        if(i == arr.length - 1)
+            return arr[i];
+
+        // Find maximum from the rest of the array
+        int recMax = findMax(arr,i+1);
+
+        // Compare with i-th element and return
+        return Math.max(recMax, arr[i]);
     }
 
     static int largest(int[] arr){
