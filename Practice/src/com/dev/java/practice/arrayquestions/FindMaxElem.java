@@ -43,7 +43,7 @@ public class FindMaxElem {
     }
 
     public static void main(String[] args) {
-        int[] arr = {10,23,20,15,22,50,58,10,2,22,5};
+        int[] arr = {10,23,20,15,22,50,5,10,2,22,5};
         System.out.println(largest(arr));
     }
 }
