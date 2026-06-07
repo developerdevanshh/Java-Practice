@@ -7,7 +7,7 @@ public class ArrayListExample {
         list.add("Java");
         list.add("JavaScript");
         list.add("C++");
-//        list.add("Java"); // Duplicates Allowed
+        list.add("Java"); // Duplicates Allowed
 
         System.out.println(list);
 
