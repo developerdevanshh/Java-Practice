@@ -26,6 +26,9 @@ public class ArrayListExample {
 
         System.out.println(list);
 
+
+        System.out.println(list.size());
+
         System.out.println("Fast read(index 1): " + list.get(1)); // O(1)
     }
 }
