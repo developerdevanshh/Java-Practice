@@ -15,7 +15,13 @@ public class ArrayListExample {
         list2.add("Deva");
         list2.add("Devansh");
         list2.add("Dev");
-        
+
+        //size
+        System.out.println(list.size());
+
+        //removal
+        list.remove(0);
+
         list.addAll(list2);
 
         System.out.println(list);
