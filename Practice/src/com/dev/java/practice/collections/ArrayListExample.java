@@ -1,5 +1,7 @@
 package com.dev.java.practice.collections;
 import java.util.ArrayList;
+import java.util.*;
+
 import java.util.Arrays;
 import java.util.List;
 public class ArrayListExample {
@@ -27,8 +29,15 @@ public class ArrayListExample {
 //        list.clear();
 
         list.addAll(list2);
-
         System.out.println(list);
+
+
+        //sorting
+        Collections.sort(list);
+        System.out.println(list);
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println(list);
+
 
 
         System.out.println(list.size());
