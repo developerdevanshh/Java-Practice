@@ -11,6 +11,6 @@ public class ArrayListExample {
 
         System.out.println(list);
 
-//        System.out.println("Fast read(index 1): " + list.get(1)); // O(1)
+        System.out.println("Fast read(index 1): " + list.get(1)); // O(1)
     }
 }
