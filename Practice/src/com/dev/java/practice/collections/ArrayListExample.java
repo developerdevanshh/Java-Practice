@@ -22,6 +22,10 @@ public class ArrayListExample {
         //removal
         list.remove(0);
 
+        System.out.println(list.size());
+        list.add("11");
+//        list.clear();
+
         list.addAll(list2);
 
         System.out.println(list);
