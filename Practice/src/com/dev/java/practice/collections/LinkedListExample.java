@@ -25,7 +25,9 @@ public class LinkedListExample {
         ll.remove("Before Two"); // remove(Object): Removes the first occurrence of the specified object from the LinkedList.
         System.out.println(ll);
         ll.remove(1); // remove(int index) : Removes the element at the given index and shifts subsequent elements.
-        System.out.println(ll); 
+        System.out.println(ll);
+
+
 
 
     }
