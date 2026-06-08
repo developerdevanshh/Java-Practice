@@ -33,8 +33,12 @@ public class LinkedListExample {
             System.out.println(ll.get(i) + " ");
         }
 
-//        System.out.println();
+        System.out.println();
 
+        // Using the for each loop OR Using iterator is recommended practise
+        for(String str : ll){
+            System.out.println(str + " ");
+        }
 
     }
 }
