@@ -14,24 +14,26 @@ public class LinkedListExample {
         ll.add("Three");
         ll.add("Four");
         ll.add("Five"); // add(Object)
-        System.out.println(ll);
+//        System.out.println(ll);
+//
+//        ll.add(1,"One Again"); // add(int index, Object)
+//        System.out.println(ll);
+//
+//        ll.set(1, "Before Two"); // set() method, we can update an element in a LinkedList
+//        System.out.println(ll);
+//
+//        ll.remove("Before Two"); // remove(Object): Removes the first occurrence of the specified object from the LinkedList.
+//        System.out.println(ll);
+//        ll.remove(1); // remove(int index) : Removes the element at the given index and shifts subsequent elements.
+//        System.out.println(ll);
 
-        ll.add(1,"One Again"); // add(int index, Object)
-        System.out.println(ll);
+        // Using the Get method and the for loop
+        // Using get(i) in a loop is O(n^2) for LinkedList! Bad practice for large lists
+        for(int i = 0; i <ll.size();i++){
+            System.out.println(ll.get(i) + " ");
+        }
 
-        ll.set(1, "Before Two"); // set() method, we can update an element in a LinkedList
-        System.out.println(ll);
-
-        ll.remove("Before Two"); // remove(Object): Removes the first occurrence of the specified object from the LinkedList.
-        System.out.println(ll);
-        ll.remove(1); // remove(int index) : Removes the element at the given index and shifts subsequent elements.
-        System.out.println(ll);
-
-        ll.remove("Before Two"); // remove(Object): Removes the first occurrence of the specified object from the LinkedList.
-        System.out.println(ll);
-        ll.remove(1); // remove(int index) : Removes the element at the given index and shifts subsequent elements.
-        System.out.println(ll);
-
+        System.out.println();
 
 
     }
