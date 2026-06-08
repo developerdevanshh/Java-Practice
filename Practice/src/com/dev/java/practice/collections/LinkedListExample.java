@@ -33,7 +33,7 @@ public class LinkedListExample {
             System.out.println(ll.get(i) + " ");
         }
 
-        System.out.println();
+//        System.out.println();
 
 
     }
