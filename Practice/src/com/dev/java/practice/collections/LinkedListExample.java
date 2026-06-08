@@ -13,8 +13,14 @@ public class LinkedListExample {
         ll.add("Two");
         ll.add("Three");
         ll.add("Four");
-        ll.add("Five");
-
+        ll.add("Five"); // add(Object)
         System.out.println(ll);
+
+        ll.add(1,"One Again"); // add(int index, Object)
+        System.out.println(ll);
+
+        ll.set(1, "Before Two"); // set() method, we can update an element in a LinkedList
+        System.out.println(ll);
+
     }
 }
