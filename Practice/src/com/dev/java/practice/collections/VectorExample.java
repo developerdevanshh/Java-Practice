@@ -68,7 +68,15 @@ public class VectorExample {
 
         System.out.println("After removal: " + v2);
 
+        for(int i = 0;i<v2.size(); i++){
+            System.out.print(v2.get(i) + " ");
+        }
 
+        System.out.println();
+
+        for(Integer i : v2){
+            System.out.print(i + " ");
+        }
 
     }
 }
