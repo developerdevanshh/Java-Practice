@@ -55,6 +55,13 @@ public class VectorExample {
 
         System.out.println("V2 " +v2);
 
+        // Using set() method to replace 10 with 25
+        System.out.println("The Object that is replaced is: " + v2.set(0,25));
+
+        // Using set() method to replace 23 with 50
+        System.out.println("The Object that is replaced is: " + v2.set(5,50));
+
+        System.out.println("The new vector is: " + v2);
 
 
 
