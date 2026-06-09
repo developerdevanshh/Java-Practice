@@ -9,7 +9,6 @@ public class VectorExample {
         v.add("A");
         v.add("B");
         v.add("C");
-        v.add("D");
 
         System.out.println(v);
     }
