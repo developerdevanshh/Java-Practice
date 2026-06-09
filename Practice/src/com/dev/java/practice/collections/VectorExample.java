@@ -40,14 +40,23 @@ public class VectorExample {
 //
 //        System.out.println("V1 " + v1);
 //
-//        // Creating Generic Vector
-//        Vector<Integer> v2 = new Vector<Integer>();
-//
-//        // Adding custom elements using add() method
-//        v2.add(10);
-//        v2.add(20);
-//        v2.add(30);
-//
-//        System.out.println("V2 " +v2);
+        // Creating Generic Vector
+        Vector<Integer> v2 = new Vector<Integer>();
+
+        // Adding custom elements using add() method
+        v2.add(10);
+        v2.add(20);
+        v2.add(30);
+        v2.add(12);
+        v2.add(23);
+        v2.add(22);
+        v2.add(10);
+        v2.add(20);
+
+        System.out.println("V2 " +v2);
+
+
+
+
     }
 }
