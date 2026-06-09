@@ -63,6 +63,11 @@ public class VectorExample {
 
         System.out.println("The new vector is: " + v2);
 
+        // Removing First occurrence element at 3
+        v2.remove(3);
+
+        System.out.println("After removal: " + v2);
+
 
 
     }
