@@ -1,8 +1,6 @@
 package com.dev.java.practice.collections;
-import java.util.NavigableMap;
-import java.util.NavigableSet;
-import java.util.TreeSet;
-import java.util.Set;
+import java.util.*;
+
 public class TreeSetExample {
     public static void main(String[] args) {
 //        TreeSet<Integer> ts = new TreeSet<>();
@@ -51,8 +49,16 @@ public class TreeSetExample {
 //        ts.pollLast();
 //        System.out.println("After Removing Last element: " + ts);
 
+        Iterator itr = ts.iterator();
+
+        while (itr.hasNext()){
+            System.out.print(itr.next() + " ");
+        }
+
+        System.out.println();
+
         for(String str : ts){
-            System.out.println(str);
+            System.out.print(str);
         }
 
 
