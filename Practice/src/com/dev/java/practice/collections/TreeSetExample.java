@@ -43,6 +43,15 @@ public class TreeSetExample {
 
         System.out.println("After Removing elements: " + ts);
 
+        // Removing the first element using pollFirst() method
+        ts.pollFirst();
+        System.out.println("After Removing First element: " + ts);
+
+        // Removing the last element using pollLast() method
+        ts.pollLast();
+        System.out.println("After Removing Last element: " + ts);
+
+
 
 
     }
