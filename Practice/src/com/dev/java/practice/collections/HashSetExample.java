@@ -41,7 +41,7 @@ public class HashSetExample {
         Iterator<String> iterator = hs.iterator();
 
         while(iterator.hasNext()){
-            System.out.println(iterator.next() + ", ");
+            System.out.print(iterator.next() + ", ");
         }
 
         System.out.println();
