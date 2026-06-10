@@ -49,6 +49,29 @@ public class StackExample {
 //        System.out.println("Final Stack: " + stack);
 
 
+        // Stack implementation
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.println("Using Stack (LIFO): ");
+        while (!stack.isEmpty()){
+            System.out.print(stack.pop() + " "); // pops elements in LIFO order
+        }
+        System.out.println();
+
+        // ArrayDeque as Stack
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.push(10);
+        deque.push(20);
+        deque.push(30);
+
+        System.out.println("Using ArrayDeque (LIFO): ");
+        while (!deque.isEmpty()){
+            System.out.println(deque.pop() + " ") ; // pops elements in LIFO order
+        }
+        System.out.println();
 
     }
 }
