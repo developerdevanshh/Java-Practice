@@ -13,8 +13,14 @@ public class HashSetExample {
         hs.add(4);
         hs.add(9);
 
-
         System.out.println("HashSet Size: " + hs.size());
         System.out.println("Elements in HashSet: " + hs);
+
+        // Removing Elements
+        hs.remove(1);
+
+        System.out.println("HastSet after removing element : " + hs);
+
+        //
     }
 }
