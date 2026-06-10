@@ -10,6 +10,9 @@ public class HashSetExample {
         hs.add(1);
         hs.add(4);
         hs.add(9);
+        hs.add(4);
+        hs.add(9);
+
 
         System.out.println("HashSet Size: " + hs.size());
         System.out.println("Elements in HashSet: " + hs);
