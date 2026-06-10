@@ -1,4 +1,5 @@
 package com.dev.java.practice.collections;
+import java.io.FilterOutputStream;
 import java.util.*;
 public class HashSetExample {
     public static void main(String[] args) {
@@ -21,6 +22,7 @@ public class HashSetExample {
 
         System.out.println("HastSet after removing element : " + hs);
 
-        //
+        // Return false if the element is not present
+        System.out.println("Remove 1 :" + hs.remove(1));
     }
 }
