@@ -19,24 +19,25 @@ public class StackExample {
 //        }
 
         // Default Initialization of Stack
-        Stack stack1 = new Stack();
+//        Stack stack1 = new Stack();
 
         // Initialization of Stack using Generics
-        Stack<String> stack2 = new Stack<String>();
+        Stack<String> stack = new Stack<String>();
 
         // pushing the elements
-        stack1.push("4");
-        stack1.push("All");
-        stack1.push("Geeks");
-        stack1.push("Devs");
+        stack.push("4");
+        stack.push("All");
+        stack.push("Geeks");
+        stack.push("Devs");
 
-        stack2.push("I");
-        stack2.push("am");
-        stack2.push("from");
-        stack2.push("Kota.");
+//        stack2.push("I");
+//        stack2.push("am");
+//        stack2.push("from");
+//        stack2.push("Kota.");
 
-        System.out.println(stack1);
-        System.out.println(stack2);
+        // Displaying the Stack
+        System.out.println("Initial Stack: " + stack);
+//        System.out.println(stack2);
 
 
     }
