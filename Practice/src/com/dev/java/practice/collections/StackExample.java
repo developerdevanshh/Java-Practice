@@ -39,6 +39,10 @@ public class StackExample {
         System.out.println("Initial Stack: " + stack);
 //        System.out.println(stack2);
 
+        System.out.println("The element at the Top of the stack is: " + stack.peek());
+
+        System.out.println("Final Stack: " + stack);
+
 
     }
 }
