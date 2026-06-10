@@ -38,18 +38,22 @@ public class TreeSetExample {
 //        System.out.println("Higher " + ts.higher(val));
 //        System.out.println("Lower " + ts.lower(val));
 
-        // Removing the specific existing element inserted above
-        ts.remove("ij");
+//        // Removing the specific existing element inserted above
+//        ts.remove("ij");
+//
+//        System.out.println("After Removing elements: " + ts);
+//
+//        // Removing the first element using pollFirst() method
+//        ts.pollFirst();
+//        System.out.println("After Removing First element: " + ts);
+//
+//        // Removing the last element using pollLast() method
+//        ts.pollLast();
+//        System.out.println("After Removing Last element: " + ts);
 
-        System.out.println("After Removing elements: " + ts);
-
-        // Removing the first element using pollFirst() method
-        ts.pollFirst();
-        System.out.println("After Removing First element: " + ts);
-
-        // Removing the last element using pollLast() method
-        ts.pollLast();
-        System.out.println("After Removing Last element: " + ts);
+        for(String str : ts){
+            System.out.println(str);
+        }
 
 
 
