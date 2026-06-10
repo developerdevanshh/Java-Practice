@@ -22,21 +22,28 @@ public class TreeSetExample {
 
         System.out.println("Tree Set is: " + ts);
 
-        String check = "de";
+//        String check = "de";
+//
+//        System.out.println("Contains: " + check + " " + ts.contains(check));
+//
+//        // Print the first element in the TreeSet
+//        System.out.println("First Value: " + ts.first());
+//
+//        // Print the last element in the TreeSet
+//        System.out.println("Last Value: " + ts.last());
+//
+//        String val = "ef";
+//
+//        // Find the values greater than and smaller than the above String
+//        System.out.println("Higher " + ts.higher(val));
+//        System.out.println("Lower " + ts.lower(val));
 
-        System.out.println("Contains: " + check + ts.contains(check));
+        // Removing the specific existing element inserted above
+        ts.remove("ij");
 
-        // Print the first element in the TreeSet
-        System.out.println("First Value: " + ts.first());
+        System.out.println("After Removing elements: " + ts);
 
-        // Print the last element in the TreeSet
-        System.out.println("Last Value: " + ts.last());
 
-        String val = "ef";
-
-        // Find the values greater than and smaller than the above String
-        System.out.println("Higher " + ts.higher(val));
-        System.out.println("Lower " + ts.lower(val));
 
     }
 }
