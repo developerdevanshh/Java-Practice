@@ -26,6 +26,6 @@ public class HashMapExample {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
-        System.out.println("HashMap2" + hashMap1); 
+        System.out.println("HashMap2" + hashMap1);
     }
 }
