@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class HashMapExample {
     public static void main(String[] args) {
 
-        // Create a HashMap
+        // Create a HashMap (No need to mention the Generic type twice)
         HashMap<String,Integer> hashMap = new HashMap<>();
 
         // Add elements to the HashMap
