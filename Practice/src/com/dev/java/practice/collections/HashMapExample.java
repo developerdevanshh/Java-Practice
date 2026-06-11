@@ -1,7 +1,7 @@
 package com.dev.java.practice.collections;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapExample {
     public static void main(String[] args) {
@@ -26,6 +26,6 @@ public class HashMapExample {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
-        System.out.println("HashMap2" + hashMap1);           
+        System.out.println("HashMap2" + hashMap1);
     }
 }
