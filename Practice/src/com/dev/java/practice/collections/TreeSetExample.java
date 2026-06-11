@@ -4,21 +4,21 @@ import java.util.*;
 public class TreeSetExample {
     public static void main(String[] args) {
 //        TreeSet<Integer> ts = new TreeSet<>();
-        NavigableSet<String> ts = new TreeSet<>();
-        ts.add("ab");
-        ts.add("bc");
-        ts.add("cd");
-        ts.add("de");
-        ts.add("ef");
-        ts.add("ef");
-        ts.add("ef");
-        ts.add("fg");
-        ts.add("gh");
-        ts.add("hi");
-        ts.add("ij");
-        ts.add("ij");
-
-        System.out.println("Tree Set is: " + ts);
+//        NavigableSet<String> ts = new TreeSet<>();
+//        ts.add("ab");
+//        ts.add("bc");
+//        ts.add("cd");
+//        ts.add("de");
+//        ts.add("ef");
+//        ts.add("ef");
+//        ts.add("ef");
+//        ts.add("fg");
+//        ts.add("gh");
+//        ts.add("hi");
+//        ts.add("ij");
+//        ts.add("ij");
+//
+//        System.out.println("Tree Set is: " + ts);
 
 //        String check = "de";
 //
@@ -49,18 +49,35 @@ public class TreeSetExample {
 //        ts.pollLast();
 //        System.out.println("After Removing Last element: " + ts);
 
-        Iterator itr = ts.iterator();
+//        Iterator itr = ts.iterator();
+//
+//        while (itr.hasNext()){
+//            System.out.print(itr.next() + " ");
+//        }
+//
+//        System.out.println();
+//
+//        for(String str : ts){
+//            System.out.print(str);
+//        }
 
-        while (itr.hasNext()){
-            System.out.print(itr.next() + " ");
-        }
+        // Creating a TreeSet with a Custom Comparator
+        Set<StringBuffer> ts = new TreeSet<>(new Comparator<StringBuffer>() {
+            @Override
+            public int compare(StringBuffer o1, StringBuffer o2) {
+                return o1.toString().compareTo(o2.toString());
+            }
+        });
 
-        System.out.println();
+        // Adding elements to the TreeSet
+        ts.add(new StringBuffer("A"));
+        ts.add(new StringBuffer("Z"));
+        ts.add(new StringBuffer("L"));
+        ts.add(new StringBuffer("B"));
+        ts.add(new StringBuffer("O"));
+        ts.add(new StringBuffer("1"));
 
-        for(String str : ts){
-            System.out.print(str);
-        }
-
+        System.out.println(ts);
 
 
 
