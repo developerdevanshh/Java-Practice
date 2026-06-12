@@ -1,6 +1,7 @@
 package com.dev.java.practice.collections;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class LinkedHashMapExample {
     public static void main(String[] args) {
@@ -19,13 +20,20 @@ public class LinkedHashMapExample {
 
         // Printing the updated Map
         System.out.println("Updated Map: " + lhm);
+//
+//        // Remove the value with key 3
+//        lhm.remove(3);
 
-        // Remove the value with key 3
-        lhm.remove(3);
-
-        // Printing the updated Map
-        System.out.println("Updated Map: " + lhm);
+//        // Printing the updated Map
+//        System.out.println("Updated Map: " + lhm);
 //        System.out.println(lhm);
+
+        for(Map.Entry<Integer,String> mapElement : lhm.entrySet()){
+            Integer k = mapElement.getKey();
+            String s = mapElement.getValue();
+
+            System.out.println(k + " " + s);
+        }
 
     }
 }
