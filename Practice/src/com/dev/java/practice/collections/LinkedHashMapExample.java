@@ -13,6 +13,7 @@ public class LinkedHashMapExample {
         lhm.put("Orange",15);
         lhm.put("Watermelon",15);
 
+        System.out.println(lhm);
 
     }
 }
