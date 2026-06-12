@@ -19,6 +19,12 @@ public class LinkedHashMapExample {
 
         // Printing the updated Map
         System.out.println("Updated Map: " + lhm);
+
+        // Remove the value with key 3
+        lhm.remove(3);
+
+        // Printing the updated Map
+        System.out.println("Updated Map: " + lhm);
 //        System.out.println(lhm);
 
     }
