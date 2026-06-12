@@ -5,15 +5,21 @@ import java.util.LinkedHashMap;
 public class LinkedHashMapExample {
     public static void main(String[] args) {
         // Using LinkedHashMap of Strings(Keys) and Integer(Values)
-        LinkedHashMap<String,Integer> lhm = new LinkedHashMap<>();
+        LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer, String>();
 
-        lhm.put("Apple",15);
-        lhm.put("Bananas",15);
-        lhm.put("BlueBerry",15);
-        lhm.put("Orange",15);
-        lhm.put("Watermelon",15);
+        lhm.put(3, "Geeks");
+        lhm.put(2, "Geeks");
+        lhm.put(1, "Geeks");
 
-        System.out.println(lhm);
+        // Printing mappings to the console
+        System.out.println("" + lhm);
+
+        // Updating the value with key 2
+        lhm.put(2, "For");
+
+        // Printing the updated Map
+        System.out.println("Updated Map: " + lhm);
+//        System.out.println(lhm);
 
     }
 }
