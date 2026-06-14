@@ -2,9 +2,9 @@ package com.dev.java.practice.multithreading;
 
 public class ThreadNameDemo extends Thread {
     public void run(){
-        System.out.println("Thread Tasks.");
-        String s = Thread.currentThread().getName();
-        System.out.println(s);
+        System.out.println("Thread Tasks. " + Thread.currentThread().getName());
+//        String s = Thread.currentThread().getName();
+//        System.out.println(s);
     }
     public static void main(String[] args) {
 //        System.out.println("Hello");
