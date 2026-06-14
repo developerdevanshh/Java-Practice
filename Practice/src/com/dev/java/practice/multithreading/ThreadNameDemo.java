@@ -5,15 +5,15 @@ public class ThreadNameDemo extends Thread {
         System.out.println("Thread Tasks.");
     }
     public static void main(String[] args) {
-        System.out.println("Hello");
-        String s = Thread.currentThread().getName();
-        System.out.println(s);
-        Thread.currentThread().setName("Dev");
-        String d = Thread.currentThread().getName();
-        System.out.println(d);
+//        System.out.println("Hello");
+//        String s = Thread.currentThread().getName();
+//        System.out.println(s);
+//        Thread.currentThread().setName("Dev");
+//        String d = Thread.currentThread().getName();
+//        System.out.println(d);
         System.out.println(0/10);
-        ThreadNameDemo tnd = new ThreadNameDemo();
-        Thread t = new Thread(tnd);
-        t.start();
+//        ThreadNameDemo tnd = new ThreadNameDemo();
+//        Thread t = new Thread(tnd);
+//        t.start();
     }
 }
