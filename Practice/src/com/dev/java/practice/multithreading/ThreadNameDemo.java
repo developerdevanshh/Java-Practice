@@ -8,19 +8,22 @@ public class ThreadNameDemo extends Thread {
 //        System.out.println(s);
     }
     public static void main(String[] args) {
-        System.out.println("Hello");
-        Thread.currentThread().setName("Dev");
-        String d = Thread.currentThread().getName();
-        System.out.println(d);
-        System.out.println(0/10);
+//        System.out.println("Hello");
+//        Thread.currentThread().setName("Dev");
+//        String d = Thread.currentThread().getName();
+//        System.out.println(d);
+//        System.out.println(0/10);
         ThreadNameDemo tnd = new ThreadNameDemo();
-        Thread t = new Thread(tnd);
-        String s = Thread.currentThread().getName();
-        System.out.println(s);
-        t.start();
+//        tnd.setName("dev");
+        System.out.println(Thread.currentThread().isAlive());
+        tnd.start();
+//        Thread t = new Thread(tnd);
+//        String s = Thread.currentThread().getName();
+//        System.out.println(s);
 
         ThreadNameDemo tnd1 = new ThreadNameDemo();
         tnd1.start();
+//        tnd1.setName("dev1");
         System.out.println(Thread.currentThread().isAlive());
     }
 }
