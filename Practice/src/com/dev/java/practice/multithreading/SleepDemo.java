@@ -3,6 +3,7 @@ package com.dev.java.practice.multithreading;
 public class SleepDemo extends Thread{
     public void run(){
 //        try{
+        Thread.yield();
             for(int i = 0; i< 5;i++){
                 System.out.println(i + " : " + Thread.currentThread().getName());
 //                Thread.sleep(1000);
