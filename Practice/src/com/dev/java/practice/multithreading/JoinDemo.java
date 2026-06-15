@@ -18,7 +18,7 @@ public class JoinDemo extends Thread {
         jd.join();
 
         try{
-//            Thread.join();
+            Thread.join();
             for(int i=1;i<=5;i++){
                 System.out.println("Main Thread : " + i);
                 Thread.sleep(1000);
