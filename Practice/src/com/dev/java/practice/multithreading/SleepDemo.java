@@ -14,8 +14,9 @@ public class SleepDemo extends Thread{
 
     public static void main(String[] args) {
         SleepDemo sd = new SleepDemo();
-        Thread t = new Thread(sd);
-        t.start();
+//        Thread t = new Thread(sd);
+//        t.start();
+        sd.start();
 
         SleepDemo sd1 = new SleepDemo();
         sd1.start();
