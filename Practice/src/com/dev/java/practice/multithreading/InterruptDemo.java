@@ -15,5 +15,6 @@ public class InterruptDemo extends Thread{
     public static void main(String[] args) {
         InterruptDemo id = new InterruptDemo();
         id.start();
+        id.interrupt();
     }
 }
