@@ -19,7 +19,8 @@ public class SleepDemo extends Thread{
         sd.start();
 
         SleepDemo sd1 = new SleepDemo();
-        sd1.start();
+//        sd1.start();
+        sd1.run();
     }
 }
 
