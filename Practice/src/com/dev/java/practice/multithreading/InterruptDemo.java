@@ -4,6 +4,7 @@ public class InterruptDemo extends Thread{
 
     public void run(){
         try {
+            System.out.println(Thread.interrupted());
             for(int i = 0;i<5;i++){
                 System.out.println(i);
                 Thread.sleep(500);
