@@ -4,8 +4,8 @@ public class InterruptDemo extends Thread{
 
     public void run(){
         try {
-            System.out.println(Thread.interrupted());
-            System.out.println(Thread.interrupted());
+//            System.out.println(Thread.interrupted());
+            System.out.println(Thread.currentThread().isInterrupted());
             for(int i = 1 ; i <= 5 ; i++){
                 System.out.println(i);
                 Thread.sleep(500);
