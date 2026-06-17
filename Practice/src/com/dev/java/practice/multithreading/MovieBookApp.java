@@ -7,7 +7,7 @@ class TotalEarnings extends Thread {
         {
             total += 100;
         }
-        System.out.println(total);
+//        System.out.println(total);
     }
 }
 
@@ -15,5 +15,6 @@ public class MovieBookApp {
     public static void main(String[] args) {
         TotalEarnings te = new TotalEarnings();
         te.start();
+        System.out.println("Total Earnings : " + te.total);
     }
 }
