@@ -1,9 +1,9 @@
 package com.dev.java.practice.multithreading;
 
 class BookTheaterSeat{
-    int total_seats = 20;
+    static int total_seats = 20;
 
-    synchronized void bookSeat(int seats){
+    synchronized static void bookSeat(int seats){
         if(total_seats >= seats){
             System.out.println(seats + " Seats booked successfully.");
             total_seats = total_seats - seats;
