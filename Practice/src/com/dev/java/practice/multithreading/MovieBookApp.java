@@ -20,6 +20,6 @@ public class MovieBookApp {
         synchronized (te){
             te.wait();
         }
-//        System.out.println("Total Earnings : " + te.total);
+        System.out.println("Total Earnings : " + te.total);
     }
 }
