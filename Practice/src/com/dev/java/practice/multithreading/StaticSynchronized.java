@@ -1,7 +1,7 @@
 package com.dev.java.practice.multithreading;
 
 class BookTheaterSeat{
-    int total_seats = 20;
+    int total_seats = 10;
 
     synchronized void bookSeat(int seats){
         if(total_seats >= seats){
@@ -41,10 +41,20 @@ class MyThread2 extends Thread{
 public class StaticSynchronized {
     public static void main(String[] args) {
         BookTheaterSeat a = new BookTheaterSeat();
-        MyThread1 t1 = new MyThread1(a,7);
+        MyThread1 mt1 = new MyThread1(a,7);
+        mt1.start();
+
+        MyThread2 mt2 = new MyThread2(a, 8);
+        mt2.start();
+
+        // ================================
+
+
+        BookTheaterSeat a1 = new BookTheaterSeat();
+        MyThread1 t1 = new MyThread1(a1,7);
         t1.start();
 
-        MyThread2 t2 = new MyThread2(a, 8);
+        MyThread2 t2 = new MyThread2(a1, 8);
         t2.start();
     }
 }
