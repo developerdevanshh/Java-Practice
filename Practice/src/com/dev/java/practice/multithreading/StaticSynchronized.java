@@ -15,6 +15,29 @@ class BookTheaterApp{
     }
 }
 
+class MyThread1 extends Thread{
+    BookTheaterApp b;
+    int seats;
+    MyThread1(BookTheaterApp b, int seats){
+        this.b = b;
+        this.seats = seats;
+    }
+    public void run(){
+        b.bookSeat(seats);
+    }
+}
+
+class MyThread2 extends Thread{
+    BookTheaterApp b;
+    int seats;
+    MyThread2(BookTheaterApp b, int seats){
+        this.b = b;
+        this.seats = seats;
+    }
+    public void run(){
+        b.bookSeat(seats);
+    }
+}
 public class StaticSynchronized {
     public static void main(String[] args) {
 
