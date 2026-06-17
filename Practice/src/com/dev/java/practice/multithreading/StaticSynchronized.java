@@ -1,6 +1,6 @@
 package com.dev.java.practice.multithreading;
 
-class BookTheaterApp{
+class BookTheaterSeat{
     int total_seats = 20;
 
     void bookSeat(int seats){
@@ -16,9 +16,9 @@ class BookTheaterApp{
 }
 
 class MyThread1 extends Thread{
-    BookTheaterApp b;
+    BookTheaterSeat b;
     int seats;
-    MyThread1(BookTheaterApp b, int seats){
+    MyThread1(BookTheaterSeat b, int seats){
         this.b = b;
         this.seats = seats;
     }
@@ -28,9 +28,9 @@ class MyThread1 extends Thread{
 }
 
 class MyThread2 extends Thread{
-    BookTheaterApp b;
+    BookTheaterSeat b;
     int seats;
-    MyThread2(BookTheaterApp b, int seats){
+    MyThread2(BookTheaterSeat b, int seats){
         this.b = b;
         this.seats = seats;
     }
@@ -40,6 +40,11 @@ class MyThread2 extends Thread{
 }
 public class StaticSynchronized {
     public static void main(String[] args) {
+        BookTheaterSeat a = new BookTheaterSeat();
+        MyThread1 t1 = new MyThread1(a,7);
+        t1.start();
 
+        MyThread2 t2 = new MyThread2(a, 8);
+        t2.start();
     }
 }
