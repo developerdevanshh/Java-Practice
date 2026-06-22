@@ -29,7 +29,8 @@ public class RaceCondition {
         thread1.join();
         thread2.join();
 
-
+        // Expected: 20000
+        // Actual: something less — race condition!
         System.out.println("Final Count: " + counter.count);
     }
 }
