@@ -27,14 +27,14 @@ public class SynchronizedDemo {
         Thread thread1 = new Thread(() -> {
             for(int i=0;i< 10000;i++){
                 counter.incrementMethod();
-//                counter.incrementBlock();
+                counter.incrementBlock();
             }
         });
 
         Thread thread2 = new Thread(() -> {
             for(int i=0;i< 10000;i++){
                 counter.incrementMethod();
-//                counter.incrementBlock();
+                counter.incrementBlock();
             }
         });
 
