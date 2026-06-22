@@ -7,13 +7,13 @@ class IntrinsicDemo {
     synchronized void instanceMethod(){
         System.out.println(Thread.currentThread().getName() + "acquired lock on: " + this);
         try { Thread.sleep(1000);} catch (InterruptedException e){}
-        System.out.println(Thread.currentThread().getName() + "releasing lock");
+        System.out.println(Thread.currentThread().getName() + " releasing lock");
     }
 
     static synchronized void staticMethod(){
         System.out.println(Thread.currentThread().getName() +"acquired lock on: "+IntrinsicDemo.class);
         try { Thread.sleep(1000);} catch (InterruptedException e) {}
-        System.out.println(Thread.currentThread().getName() + "releasing lock");
+        System.out.println(Thread.currentThread().getName() + " releasing lock");
     }
 }
 
