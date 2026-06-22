@@ -22,8 +22,8 @@ public class MonitorDemo  {
         IntrinsicDemo obj = new IntrinsicDemo();
 
         Thread t1 = new Thread(()-> obj.instanceMethod(), "Thread - 1");
-        Thread t2 = new Thread(()-> obj.instanceMethod(), "Thread - 2");
-//        Thread t2 = new Thread(()-> obj.staticMethod(), "Thread - 2");
+//        Thread t2 = new Thread(()-> obj.instanceMethod(), "Thread - 2");
+        Thread t2 = new Thread(()-> obj.staticMethod(), "Thread - 2");
 
         t1.start();
         t2.start();
