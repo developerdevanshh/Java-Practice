@@ -2,6 +2,7 @@ package Practice.src.com.dev.java.practice.multithreading;
 
 public class VolatileNotEnough {
     volatile int count = 0;
+//    int count = 0;
     void increment(){
         count++; // volatile but still not atomic!
     }
