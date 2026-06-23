@@ -20,10 +20,16 @@ class UserProfile {
     }
 
     // Reader - reads both fields
+//    void display(){
+//        System.out.println("Name : " + firstName + " " + lastName);
+//    }
+    // Reader - reads both fields
     synchronized void display(){
         System.out.println("Name : " + firstName + " " + lastName);
         // Either sees "John Doe" or "Jane Smith" — never mixed
     }
+
+
 }
 
 
