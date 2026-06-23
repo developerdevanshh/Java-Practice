@@ -5,16 +5,24 @@ class UserProfile {
     private String lastName = "Doe";
 
     // Writer - Updates both fields
-    void update(){
+//    void update(){
+//        firstName = "Jane";
+//        try {Thread.sleep(1000);} catch (InterruptedException e) { }
+//        // Reader reads here - sees "Jane Doe" - inconsistent!
+//        lastName = "Smith";
+//    }
+
+    // Writer - Updates both fields using synchronized keyword
+    synchronized void update(){
         firstName = "Jane";
         try {Thread.sleep(1000);} catch (InterruptedException e) { }
-        // Reader reads here - sees "Jane Doe" - inconsistent!
         lastName = "Smith";
     }
 
     // Reader - reads both fields
     void display(){
         System.out.println("Name : " + firstName + " " + lastName);
+        // Either sees "John Doe" or "Jane Smith" — never mixed
     }
 }
 
